@@ -3,3 +3,41 @@ in jenkins --> pre build, build, post build
 
 dashboard -> nodes -> configure node monitors( to check free disk space,..)
 dashboard -> nodes -> built in nodes( to configure nodes)
+
+
+freestyle job  disadvantages(ecerything in console)
+--------------------------
+1. anyone can login and do the changes, difficult to track what went wrong
+2. difficult to restore
+3. I can't see the history, no versions
+
+scripted way
+----------------
+1. review can be done before do something.
+2. easy to restore
+3. track the changes
+4. maintains the history
+
+master and slave
+master and node architecture
+
+two options b/w master and agent
+------------------------------------
+1. when work is there, master calls agent and ask them to do work(push bases and best)
+2. daily agent comes to master and ask if there is any work
+
+In agent java is required to support master
+
+to distribute work for agents:
+-------------------------
+managejenkins -> nodes -> newnode 
+in newnode  main fields:
+    remote directory: /home/ec2-user/jenkins-agent(path should in acceesbile location i.e. permissions and modes of path)
+    labels:
+    lauchmethod: ssh
+we check in logs for connection verification
+
+
+
+
+
