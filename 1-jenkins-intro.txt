@@ -1,0 +1,5 @@
+in jenkins --> pre build, build, post build
+
+
+dashboard -> nodes -> configure node monitors( to check free disk space,..)
+dashboard -> nodes -> built in nodes( to configure nodes)
